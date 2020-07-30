@@ -54,7 +54,7 @@ function App() {
     if(moneda === '') return;
 
     //* consultamos el api para cotizar
-    const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${cryptomoneda}&tsyms=${moneda}`;
+    const url = `http://min-api.cryptocompare.com/data/pricemultifull?fsyms=${cryptomoneda}&tsyms=${moneda}`;
     const resultado = await Axios.get(url);
 
     //* mostrar el spinner
